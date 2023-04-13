@@ -1,4 +1,5 @@
 //FormWord-inputmain1.cpp
+#pragma once
 #include"Form.h"
 
 int main()
