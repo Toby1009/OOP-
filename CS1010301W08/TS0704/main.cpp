@@ -1,6 +1,6 @@
 /***********************************************************************
  * File: main.cpp
- * Author: ·¨¶v¦w
+ * Author: Â·Â¨Â¶vÂ¦w
  * Create Date: 2023/04/13
  * Editor: Brendon
  * Update Date: 2023/04/13
@@ -15,7 +15,7 @@ using namespace std;
 //Intent:find the two word levenshtein distance
 //Pre:input two string s1 and s2
 //Post:return int levenshtein distance
-int levenshtein_distance(string s1, string s2)
+int levenshteinDistance(string s1, string s2)
 {
 	int n = s1.size();
 	int m = s2.size();
@@ -49,7 +49,7 @@ int main()
 	while (getline(cin,s1)&&getline(cin,s2))
 	{	
 		//print the levenshtein distance
-		cout << levenshtein_distance(s1, s2) << endl;
+		cout << levenshteinDistance(s1, s2) << endl;
 	}
 	return 0;
 }
