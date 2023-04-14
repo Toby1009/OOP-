@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\st990\OneDrive\文件\oop\CS1010301W08\TS0705\main.cpp(60,33): warning C4267: '正在初始化': 將 'size_t' 轉換為 'int'，資料可能遺失
+C:\Users\st990\OneDrive\文件\oop\CS1010301W08\TS0705\main.cpp(92,2): warning C4267: '正在初始化': 將 'size_t' 轉換為 'int'，資料可能遺失
+C:\Users\st990\OneDrive\文件\oop\CS1010301W08\TS0705\main.cpp(140,3): warning C4267: '正在初始化': 將 'size_t' 轉換為 'int'，資料可能遺失
+  TS0705.vcxproj -> C:\Users\st990\OneDrive\文件\oop\CS1010301W08\x64\Debug\TS0705.exe
