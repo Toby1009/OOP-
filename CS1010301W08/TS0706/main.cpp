@@ -2,9 +2,9 @@
  * File: main.cpp
  * Author: ·¨¶v¦w
  * Create Date: 2023/04/13
- * Editor: Brendon
+ * Editor: ·¨¶v¦w
  * Update Date: 2023/04/13
- * Description: Levenshtein Distance
+ * Description: Shisensho game
 ***********************************************************************/
 #define MAX 6
 #define TURN_MAX 2
@@ -13,20 +13,22 @@
 #include<algorithm>
 
 using namespace std;
-
+//set the board
 vector<vector<int>> gameBoard(MAX + 2, vector<int>(MAX + 2, 0));
-
+//set the position
 struct Pos
 {
     int x, y;
 };
-
+//Intent:delet tile
+//Pre:input current and target tile with Pos struct
+//Post:delet tile
 void deleTile(Pos cur, Pos target)
 {
     gameBoard[cur.y][cur.x] = 0;
     gameBoard[target.y][target.x] = 0;
 }
-
+//Intent:init board
 void initGameBoard()
 {
     for (int i = 1; i < MAX + 1; i++)
@@ -37,14 +39,18 @@ void initGameBoard()
         }
     }
 }
-
+//Intnet:check the next step valid
+//Pre:input next step Pos and target Pos
+//Post:return true if valid ,or false
 bool nextValid(Pos next, Pos target)
 {
     if (next.x<0 || next.x>MAX + 1 || next.y<0 || next.y>MAX + 1) return false;
     if (gameBoard[next.y][next.x] == 0 || next.x == target.x && next.y == target.y) return true;
     return false;
 }
-
+//Intnet:check the cur  valid
+//Pre:input cur  Pos and target Pos
+//Post:return true if valid ,or false
 bool isValid(Pos cur, Pos target, int turns, int dir)
 {
     if (gameBoard[target.y][target.x] == 0 ||
@@ -66,7 +72,9 @@ bool isValid(Pos cur, Pos target, int turns, int dir)
     }
     return false;
 }
-
+//Intent:check the style is same and if same return true ,or false
+//Pre:input Pos cur and target
+//Post:check the style is same and if same return true ,or false
 bool isSameStyle(Pos cur, Pos target)
 {
     if ((gameBoard[cur.y][cur.x] == gameBoard[target.y][target.x]) &&
@@ -88,6 +96,7 @@ int main()
         cur.y = curY + 1;
         target.x = targetX + 1;
         target.y = targetY + 1;
+        //check the step valid ,if true ,delet Tile and print pair matched ,or print bad pair 
         if (isSameStyle(cur, target) && isValid(cur, target, 0, 5) )
         {
             deleTile(cur, target);

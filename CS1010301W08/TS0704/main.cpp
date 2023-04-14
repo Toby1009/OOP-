@@ -1,8 +1,8 @@
 /***********************************************************************
  * File: main.cpp
- * Author: ·¨¶v¦w
+ * Author: 楊鈞安
  * Create Date: 2023/04/13
- * Editor: Brendon
+ * Editor: 楊鈞安
  * Update Date: 2023/04/13
  * Description: Levenshtein Distance 
 ***********************************************************************/

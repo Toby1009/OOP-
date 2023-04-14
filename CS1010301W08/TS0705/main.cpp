@@ -2,7 +2,7 @@
  * File: main.cpp
  * Author: ·¨¶v¦w
  * Create Date: 2023/04/15
- * Editor: Brendon
+ * Editor: ·¨¶v¦w
  * Update Date: 2023/04/15
  * Description: Cow Calculation
 ***********************************************************************/
