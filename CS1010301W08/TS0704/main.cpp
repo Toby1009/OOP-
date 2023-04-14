@@ -1,6 +1,6 @@
 /***********************************************************************
  * File: main.cpp
- * Author: ·¨¶v¦w
+ * Author: Â·Â¨Â¶vÂ¦w
  * Create Date: 2023/04/13
  * Editor: Brendon
  * Update Date: 2023/04/13
